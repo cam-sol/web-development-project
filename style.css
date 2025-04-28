@@ -1,0 +1,216 @@
+body{ /* Background color for entire webpage  */
+  background-color: #b4e9c6;
+}
+.content-section { /* Styles the content section (center) of webpages */
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(235, 247, 232); /* or whatever color you want for the middle section */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional for a subtle shadow */
+  border-radius: 10px; /* optional for rounded corners */
+}
+
+.navbar { /* Adds details and makes navbar neater */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #15894b;
+  display: flex;
+  justify-content: left;
+}
+
+.navbar li { 
+  margin: 0;
+}
+
+.navbar a { /* Adds details and makes navbar elements neater */
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover { /* Adds a light hover effect for navbar elements */
+  background-color: #3aaa6e;
+}
+
+h1{
+  text-align: center; /* Default setting for all h1 elements */
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.topic { /* Makes topic headers neater on page */
+  font-size: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 3;
+  text-align: left;
+  font-weight: bold;
+}
+
+p { /*Makes paragraphs neater on page */
+  font-size: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.subtopic { /* For smaller subtopic paragraphs */
+  font-size: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 3;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+.main-img { /* Had to change main img and cookie popup images to fit smaller screens */
+  float: right;              
+  margin-right: 50px;        
+  margin-left: 20px;         
+  margin-bottom: 20px;      
+  max-width: calc(100% - 70px); 
+  height: auto;              
+}
+
+
+.cookie-popup { 
+  display: block;            
+  margin: 0 auto 20px auto;  
+  margin-top: 20px;          
+  max-width: 100%;           
+  height: auto;              
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#result {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #15894b; /* Same green as navbar */
+  color: white;              /* White text */
+  padding: 5px 0;            /* Space above and below text */
+  margin-top: 40px;           /* Space between content and footer */
+  font-weight: bold;          /* Match the navbar font boldness */
+  justify-content: center;
+}
+
+/* My CSS code for responsive web design */
+
+@media screen and (max-width: 600px) { /* Responsive design element for smaller screens */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    padding: 12px 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p, .topic, .subtopic {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .main-img {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    max-width: 90%;
+    height: auto;
+
+    /* My separate media queries for my quiz */
+    .quiz-container {
+      width: 90%;
+      padding: 15px; 
+    }
+  
+    .question {
+      font-size: 18px;
+    }
+  
+    input[type="radio"], button {
+      font-size: 16px; 
+    }
+  
+    button {
+      padding: 12px;
+      width: 100%; 
+    }
+  
+    .answer-options {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .answer-options label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) { /* Responsive design for slightly smaller screens */
+    .navbar {
+      flex-direction: row;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    p, .topic, .subtopic {
+      font-size: 20px;
+    }
+    .main-img {
+      max-width: 70%;
+
+      /* My other separate media queries for my quiz (tablet screen size) */
+  .quiz-container {
+    width: 80%;
+  }
+
+  .question {
+    font-size: 22px;
+  }
+
+  input[type="radio"], button {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 14px;
+  }
+
+  .answer-options {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+}
+}
+  }
+  
